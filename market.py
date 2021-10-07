@@ -1,3 +1,9 @@
+# source venv/bin/activate
+# export FLASK_APP=market.py
+# export FLASK_APP=market.py
+# flask run
+
+
 from flask import Flask, render_template
 
 app = Flask(__name__)
