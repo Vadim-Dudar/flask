@@ -1,0 +1,32 @@
+{% extends 'blocks/pattern.html' %}
+
+
+{% block title %}
+Register
+{% endblock %}
+
+
+{% block content %}
+<h2>REGISTER FORM</h2>
+<div class="container">
+   <form method="post" class="form-register" style="color:white">
+       {{ form.hidden_tag() }}
+
+       {{ form.username.label() }}
+       {{ form.username(class="form-control", placeholder="User Name") }}
+
+       {{ form.email_address.label() }}
+       {{ form.email_address(class="form-control", placeholder="Your Email Address") }}
+
+       {{ form.password1.label() }}
+       {{ form.password1(class="form-control", placeholder="Your Password(at least 8 characters)") }}
+
+       {{ form.password2.label() }}
+       {{ form.password2(class="form-control", placeholder="Confirm Password") }}
+
+       <br>
+       {{ form.submit(class="btn btn-block btn-primary", placeholder="User Name") }}
+   </form>
+</div>
+
+{% endblock %}
